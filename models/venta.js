@@ -2,8 +2,8 @@ var mongoose = require("mongoose")
 var Schema = mongoose.Schema;
 
 var VentasSchema = Schema({
-    book:{ type: Schema.ObjectId, ref: 'user'},
-    book:{ type: Schema.ObjectId, ref: 'producto'},
+    user:{ type: Schema.ObjectId, ref: 'user'},
+    produco:{ type: Schema.ObjectId, ref: 'producto'},
     folio: String,
     cantidad: String,
     p_unitario: Integer,
